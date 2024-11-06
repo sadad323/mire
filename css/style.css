@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquareRoundEB';
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.home{
+    width: 100%;
+    height: 912px;
+    background:linear-gradient(rgba(0, 0, 0,0.8),rgba(102, 103, 171,0.1)), url(/img/image.png) no-repeat;
+    background-size: cover;
+}
+.GNB{
+    width: 100%;    
+    height: 95px;
+    position: fixed;
+    background-color: rgba(102, 103, 171, 0.3);
+    z-index: 99999999;
+    display: flex;
+    transition: background-color 0.5s ease;
+}
+.GNBcontents{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 25px;
+    color: white;
+}
+.menu li{
+    list-style: none;
+    display: flex;
+    align-items: center;    
+}
+.mainContent{
+    width: 100%;
+    height: 817px;
+}
+.mains{
+    margin: 0 auto;
+    width: 70%;
+}
+.news{
+    color: white;
+    margin-bottom: 140px;
+    text-align: center;
+    text-shadow:0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+}
+.middleTitleText{
+    font-size: 40px;
+}
+.smallTitleText{
+    font-size: 20px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.leftButton{
+    height: 100px;
+    border-radius: 30px;
+    background-color: rgba(111, 114, 184, 0.8);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.rightButton{
+    height: 100px;
+    border-radius: 30px;
+    background-color: rgba(111, 114, 184, 0.8);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.nextButton h2{
+    color: white;
+    margin-right: 20px;
+}
+.nButton{
+    color: white;
+    font-size: 25px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.License{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: #6667AB;
+}
+.upBlock{
+    height: 2%;
+    width: 100%;
+    background-color: #404170;
+    margin: 0 auto;
+}
+.license{
+    height: 80%;
+    background-color: #6667AB;
+    display: flex;
+    padding: 50px 20px;
+}
+.downBlock{
+    height: 20%;
+    width: 100%;
+    background-color: #303152;
+    margin: 0 auto;
+}
+.License .left img{
+    border: 1px solid black;
+    background-color: white;
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}
+.License .right ul li{
+    list-style: none;
+    border: 1px solid black;
+    height: 60px;
+    background-color: #7D94E7;
+    margin-bottom: 70px;
+    font-size: 40px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.License .left h1{
+    color: white;
+    background-color: #33335a;
+    margin: 0 auto;
+}
+.nextButton2{
+    display: flex;
+    position: absolute;
+    right: 5%;
+    bottom: 20px;
+    height: 50px;
+}
+.About{
+    width: 100%;
+    background-color: #303152;
+}
+.About .History{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.About .History h1{
+    font-size: 60px;
+}
+.About .History .hh1{
+    left: 800px;
+    border: 1px solid white;
+    color: black;
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow:0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+    box-shadow: 0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+}
+.About .History .HistoryWrap{
+    padding: 100px 0px;
+    display: flex;
+}
+.About .History .workHistory{
+    border: 1px solid black;
+    height: 400px;
+    background: url(/img/coding.jpg) no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.About .History .workHistory:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+}
+.About .History .myHistory{
+    border: 1px solid black;
+    height: 400px;
+    background: url(/img/sky.jpg) no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.About .History .myHistory:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+}
+.About .History .workHistory h1{
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+.About .History .myHistory h1{
+    font-size: 40px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+.workHistoryMain{
+    height: 912px;
+    width: 100%;
+    background-color: #6667AB;
+    display: flex;
+    position: relative;
+    background-color: #23243d;
+    flex-direction: column;
+}
+.workHistoryContentMob .up ul{
+    overflow-x: scroll;
+    width: 80%;
+    margin-top: 20px;
+}
+.workHistoryContentMob .up li{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.workHistoryContentMob .down li{
+    color: white;
+}
+.workHistoryMain .h1{
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    background-color: #6667AB;
+    color: white;
+    margin: 0 auto;
+    font-size: 50px;
+    border: 1px solid black;        
+    text-shadow: 0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);;
+}
+.workHistoryContent{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0 auto;
+    box-shadow:0 0 55px rgba(102, 103, 171, 0.7), 0 0 50px rgba(102, 103, 171, 0.7),0 0 45px rgba(102, 103, 171, 0.7),0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+}
+.workHistoryContent .left{
+    width: 17%;
+    height: 100%;
+    border-right: 1px solid white;
+    background-color: #303152;
+}
+.workHistoryContent .left li{
+    width: 100%;
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.workHistoryContent .left li:hover{
+    transform: scale(1.2);
+}
+.workHistoryContent .left ul{
+    padding-left: 1rem;
+}
+.workHistoryMain .left .mainWorkHistory{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    left: 150px;
+    top: 130px;
+    background-image: url(/img/coding.jpg);
+    background-size: cover;
+}
+    .workHistoryMain .left .mainWorkHistory h1{
+        position: absolute;
+        text-align: center;
+        height: 70px;
+        width: 150px;
+        left: 180px;
+        bottom: 230px;
+        border: 1px solid black;
+        background-color: white;
+    }
+.workHistoryMain .left h2{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    width: 500px;
+    height: 50px;
+    background-color: #33335a;
+    text-align: center;
+    align-self: center;
+    color: #ccc
+}
+.workHistoryMain .right{
+    width: 83%;
+    height: 100%;
+    position: relative;
+    background-color: #303152;
+}
+.workHistoryContent .right ul{
+    width: 70%;
+    height: 100%;
+}
+.workHistoryContent .right li{
+    margin-top: 20px;
+}
+.myHistoryMain{
+    height: 912px;
+    width: 100%;
+    background-color: #1b1c30;
+}
+.myHistoryMain .up{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 60px;
+}
+.myHistoryMain .up img{
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+}
+.myHistoryMain .up .text{
+    background-color: #373a63;
+    color: white;
+    width: 800px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    box-shadow:0 0 55px rgba(102, 103, 171, 0.7), 0 0 50px rgba(102, 103, 171, 0.7),0 0 45px rgba(102, 103, 171, 0.7),0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+
+}
+.myHistoryMain .down{
+    display: flex;
+    position: relative;
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+}
+.myHistoryMain .down .text{
+    box-shadow:0 0 55px rgba(102, 103, 171, 0.7), 0 0 50px rgba(102, 103, 171, 0.7),0 0 45px rgba(102, 103, 171, 0.7),0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
+    width: 800px;
+    height: 300px;
+    background-color: #373a63;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.myHistoryMain .down img{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+.footer{
+    padding-top: 30px;
+    text-align: center;
+    background-color: #33335a;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/*미디어 커리*/
+@media (min-width: 576px) and (max-width:741px) {
+    .workHistoryContent .left li{   
+        font-size: 20px;
+    }
+}
+@media (min-width: 360px) and  (max-width: 991px) {
+    .license {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .License .license .right ul li{
+        font-size: 25px;
+    }
+    .License .license .right ul{
+        padding-right: 10px;
+        padding-left: 50px;
+    }
+    .License .left img{
+        height: 150px;
+        width: 250px;
+    }
+    .License .license .left{
+        padding: 30px 100px 30px 100px;
+    }
+    .License .license .nextButton2{
+        display: flex;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+    }
+    .button{
+        margin-bottom: 30px;
+    }
+    .About .History .HistoryWrap{
+        display: block;
+    }
+    .About .History .workHistory{
+        height: 250px;
+    }
+    .About .History .myHistory{
+        height: 250px;
+    }
+    .menuText{
+        font-size: 15px;
+    }
+    .middleTitleText{
+        font-size: 30px;
+    }
+    .smallTitleText{
+        font-size: 20px;
+    }
+}

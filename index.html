@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bigBox" id="home">
+        <div class="home">
+            <div class="GNB col-12">
+                    <div class="GNBcontents col-9">
+                    <div class="logo col-2">
+                        <h1><a href="#home">김진회</a></h1>
+                    </div>
+                    <ul class="menu col-8 col-lg-6">
+                        <li class="menuText"><a href="https://arist6034.tistory.com/" target="_blank">소식</a></li>
+                        <li class="menuText"><a href="#About">나에 대한 이야기</a> </li>
+                        <li class="menuText"><a href="#License">자격증</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainContent" style="padding: 0 80px;">
+                <div class="news col-12 d-lg-block d-none container-fluid" style="padding-top: 300px;">
+                    <h1 class="largeTitleText">예시 제목</h1>
+                    <h2 class=" middleTitleText">여기다가 소제목을 적으십시오</h2>
+                </div>
+                <div class="news col-12 d-block d-lg-none container-fluid" style="padding-top: 200px; font-size: 10px;">
+                    <h1 class=" middleTitleText">예시 제목</h1>
+                    <h2 class=" smallTitleText">여기다가 소제목을 적으십시오</h2>
+                </div>
+                <div class="button col-9 row">
+                    <button type="button" class="btn btn-primary btn-lg col-12 col-lg-3 mb-5 mb-lg-0 fs-4 fs-lg-1" style="height: 90px; background-color: rgba(111, 114, 184, 0.8); border-color: rgba(111, 114, 184, 0.8);" onclick="window.open('https://arist6034.tistory.com/', '_blank');">
+                        소식
+                    </button>
+                              
+                    <button type="button" class="btn btn-primary col-12 col-lg-3 fs-5 fs-lg-2" style="height: 90px; background-color: rgba(111, 114, 184, 0.8); border-color: rgba(111, 114, 184, 0.8);" onclick="window.location.href='#About';">
+                        나에 대한 이야기
+                      </button>
+                      
+                </div>
+            </div>
+        </div>
+        <div class="License" id="License">   
+            <div class="upBlock col-12"></div>
+            <div class="license d-flex">
+                <div class="left col-12 col-lg-6">
+                    <img class="col-12 col-lg-4 " src="mainLicense.jpg" alt="가장 중요한 자격증 사진"><!--크게 보이는 이미지-->
+                    <h1 class="col-12 col-lg-6">자격증 이름<br>얻은 날짜</h1>
+                </div>
+                <div class="right col-12 col-lg-6 mt-lg-5 pt-lg-5">
+                    <ul class="license-list">
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 1일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 1일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 1일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 1일</li>
+                    </ul>
+                    <ul class="license-list" style="display: none;">
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 2일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 21일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 12일</li>
+                        <li class="mb-2 mb-lg-5 col-12">ITQ(아래 한글) 8월 12일</li>
+                    </ul>
+                </div>
+                <div class="lg-none" style="height: 100px;"></div>
+                <div class="nextButton2">
+                    <button type="button" class="btn btn-outline-info col-1" id="prevBtn" style="width: 60px;">&lt;</button>
+                    <button type="button" class="btn btn-outline-info col-1" id="nextBtn" style="width: 60px;">&gt;</button>
+                </div>
+            </div>
+            <div class="downBlock"></div>
+        </div>
+        <div class="About" id="About">
+            <div class="History col-8">
+                <h1 class="hh1" style="color: white;">소개</h1>
+                <div class="HistoryWrap col-12 justify-content-around">
+                    <div class="workHistory col-lg-4 col-12" onclick="scrollToWorkHistory()">
+                        <h1>경력</h1>
+                    </div>
+                    <div class="myHistory col-lg-4 col-12" onclick="scrollToMyHistory()">
+                        <h1>나에 대한 이야기</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="workHistoryMain d-block d-sm-flex" id="workHistory">
+            <h1 class="h1">경력</h1>
+            <div class="workHistoryContent d-none d-sm-flex">
+                <div class="left">
+                    <ul id="yearList">
+                        <li data-year="2024">2024</li>
+                        <li data-year="2025">2025</li>
+                        <li data-year="2026">2026</li>
+                        <li data-year="2027">2027</li>
+                        <li data-year="2028">2028</li>
+                        <li data-year="2029">2029</li>
+                        <li data-year="2030">2030</li>
+                        <li data-year="2031">2031</li>
+                        <li data-year="2032">2032</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul id="contentList">
+                        <li class="year-info" data-year="2024">
+                            <h1>01</h1>
+                            <p>2024 경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-info" data-year="2024">
+                            <h1>02</h1>
+                            <p>2024 경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-info" data-year="2025" style="display: none;"> <!--년도 2024이상의 경력은 display:none을 반드시 추가할 것-->
+                            <h1>01</h1>
+                            <p>2025년 경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-info" data-year="2025" style="display: none;">
+                            <h1>02</h1>
+                            <p>2025년 경력에 대한 이야기</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 모바일에서만 보여줄 부분에 class 이름을 변경합니다 -->
+            <div class="workHistoryContentMob d- d-sm-none row">
+                <div class="up col">
+                    <ul class="d-flex yearList" style="color: white;">
+                        <li data-year="2024"><h1>2024</h1></li>
+                        <li data-year="2025"><h1>2025</h1></li>
+                        <li data-year="2026"><h1>2026</h1></li>
+                        <li data-year="2027"><h1>2027</h1></li>
+                        <li data-year="2028"><h1>2028</h1></li>
+                        <li data-year="2029"><h1>2029</h1></li>
+                        <li data-year="2030"><h1>2030</h1></li>
+                    </ul>
+                </div>
+                <div class="down col">
+                    <ul>
+                        <li class="year-infos" data-year="2024">
+                            <h2>01</h2>
+                            <p>경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-infos" data-year="2024">
+                            <h1>02</h1>
+                            <p>경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-infos" data-year="2025" style="display: none;">
+                            <h1>01</h1>
+                            <p>경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-infos" data-year="2025" style="display: none;">
+                            <h1>02</h1>
+                            <p>경력에 대한 이야기</p>
+                        </li>
+                        <li class="year-infos" data-year="2026" style="display: none;">
+                            <h1>01</h1>
+                            <p>경력에 대한 이야기</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="myHistoryMain" id="myHistory">
+            <div class="up">
+                <img src="img/cloud.png" alt="구름" class="d-none d-md-flex">
+                <div class="text">
+                    <h1>여유로운 삶을 추구하며</h1>
+                    <p>여유로운 삶을 꿈꾸며 살아갑니다! <br> 마음의 여유가 있다면 어떤 사건이 닥치더라도 그를 버틸 수 있게 됩니다. <br> 그렇기에 여유로운 삶을 꿈꾸며 살아가며 재산상의 여유 보다는 마음의 여유를 가져서 불안감 없는 삶을 살고 싶다는 목표를 지닙니다. <br> 그렇다고 일까지 여유롭게 하진 않는 마음가짐을 가지려 합니다.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="down">
+                <div class="text">
+                    <h1>내 삶의 취미</h1>
+                    <p>독서하는 것을 즐기며 역사를 탐구하길 좋아합니다. <br> 게임을 자주하며 글을 쓰는 것을 좋아합니다. <br> 머리 속으로 게임을 구상해보고 직접 제작을 시도합니다.</p>
+                </div>
+                <img src="/img/book.png" alt="펼쳐진 책 일러스트" class="d-none d-md-block">
+            </div>
+        </div>
+        <div class="footer">
+            <h1><a href="https://github.com/sadad323" target="_blank">깃허브</a></h1>
+            <h1>arist6034@gmail.com</h1>
+            <h1><a href="#home">-메인으로-</a></h1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        const header = document.querySelector('.GNB');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                header.style.backgroundColor = 'rgba(66, 67, 110, 0.9)'; // 스크롤 시 배경색의 투명도를 1로 설정 (불투명)
+            } else {
+                header.style.backgroundColor = 'rgba(102, 103, 171, 0.3)'; // 스크롤을 맨 위로 올리면 다시 투명하게 설정
+            }
+        });
+
+
+        const years = document.querySelectorAll('.left ul li');
+const yearInfos = document.querySelectorAll('.right .year-info');
+
+years.forEach(year => {
+    year.addEventListener('click', () => {
+        // 모든 년도 정보 숨기기
+        yearInfos.forEach(info => {
+            info.style.display = 'none';
+        });
+
+        // 클릭한 년도에 해당하는 정보만 보여주기
+        const selectedYear = year.getAttribute('data-year');
+        yearInfos.forEach(info => {
+            if (info.getAttribute('data-year') === selectedYear) {
+                info.style.display = 'block';
+            }
+        });
+
+        // 강조 효과 적용
+        years.forEach(y => y.style.textShadow = 'none'); // 초기화
+        year.style.textShadow = '0 0 40px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7)';
+    });
+});
+
+// 'yearList'는 왼쪽의 년도 리스트를 가리킴
+document.addEventListener('DOMContentLoaded', function () {
+    // 화면 크기 체크 (모바일일 때만 동작하도록 설정)
+    const isMobile = window.innerWidth < 768; // 모바일 화면 (768px 미만을 모바일로 처리)
+
+    // 'yearList'는 왼쪽의 년도 리스트를 가리킴
+    const yearss = document.querySelectorAll('.yearList li');
+
+    // 'year-infos'는 년도에 해당하는 정보들을 가리킴
+    const yearInfoss = document.querySelectorAll('.year-infos');
+
+    // 모바일 화면에서만 클래스 변경
+    if (isMobile) {
+        // 여기에 추가적으로 모바일에서만 사용할 코드가 있으면 넣을 수 있습니다.
+        // 기존 코드처럼 동작하지만 클래스만 변경하는 방식
+
+        yearss.forEach(year => {
+            year.addEventListener('click', () => {
+                // 모든 년도 정보 숨기기
+                yearInfoss.forEach(info => {
+                    info.style.display = 'none';
+                });
+
+                // 클릭한 년도에 해당하는 정보만 보여주기
+                const selectedYear = year.getAttribute('data-year');
+                yearInfoss.forEach(info => {
+                    if (info.getAttribute('data-year') === selectedYear) {
+                        info.style.display = 'block';
+                    }
+                });
+
+                // 강조 효과 적용
+                yearss.forEach(y => y.style.textShadow = 'none'); // 초기화
+                year.style.textShadow = '0 0 40px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7)';
+            });
+        });
+    } else {
+        // PC에서는 기본적으로 모든 내용이 표시되도록 설정
+        yearInfoss.forEach(info => {
+            info.style.display = 'block'; // PC에서는 모든 정보를 항상 표시
+        });
+
+        // PC에서는 클릭에 의한 동적 표시를 하지 않음
+        console.log("PC 모드에서는 클릭 시 동작하지 않습니다.");
+    }
+});
+
+function scrollToWorkHistory() {
+    const workHistorySection = document.getElementById('workHistory');
+    
+    // 해당 섹션으로 부드럽게 스크롤
+    workHistorySection.scrollIntoView({
+        behavior: 'smooth' // 부드러운 스크롤
+    });
+}
+function scrollToMyHistory() {
+    const workHistorySection = document.getElementById('myHistory');
+    
+    // 해당 섹션으로 부드럽게 스크롤
+    workHistorySection.scrollIntoView({
+        behavior: 'smooth' // 부드러운 스크롤
+    });
+}
+//자격증 관련 클래스
+let currentIndex = 0; // 현재 보여지는 ul의 인덱스
+
+// 모든 자격증 목록(ul) 가져오기
+const licenseLists = document.querySelectorAll('.license-list');
+
+// 이전 버튼과 다음 버튼
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+// 자격증 목록을 초기화하여 숨기기
+function hideAllLists() {
+    licenseLists.forEach(list => {
+        list.style.display = 'none';
+    });
+}
+
+// 현재 인덱스에 해당하는 자격증 목록을 보이게 하기
+function showCurrentList() {
+    hideAllLists(); // 모든 목록 숨기기
+    licenseLists[currentIndex].style.display = 'block'; // 현재 인덱스에 해당하는 목록만 보이기
+}
+
+// 이전 버튼 클릭 시
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--; // 이전 항목으로 이동
+    } else {
+        currentIndex = licenseLists.length - 1; // 첫 번째 항목에서 마지막 항목으로 순환
+    }
+    showCurrentList();
+});
+
+// 다음 버튼 클릭 시
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < licenseLists.length - 1) {
+        currentIndex++; // 다음 항목으로 이동
+    } else {
+        currentIndex = 0; // 마지막 항목에서 첫 번째 항목으로 순환
+    }
+    showCurrentList();
+});
+
+// 페이지 로드 시 첫 번째 자격증 목록 보이기
+showCurrentList();
+
+    </script>
+</body>
+</html>
