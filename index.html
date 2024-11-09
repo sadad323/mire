@@ -28,12 +28,12 @@
             </div>
             <div class="mainContent" style="padding: 0 80px;">
                 <div class="news col-12 d-lg-block d-none container-fluid" style="padding-top: 300px;">
-                    <h1 class="largeTitleText">예시 제목</h1>
-                    <h2 class=" middleTitleText">여기다가 소제목을 적으십시오</h2>
+                    <h1 class="largeTitleText">오신 것을 환영합니다!</h1>
+                    <h2 class=" middleTitleText mt-5">미래 개발자 김진회의 포트폴리오 사이트!</h2>
                 </div>
                 <div class="news col-12 d-block d-lg-none container-fluid" style="padding-top: 200px; font-size: 10px;">
-                    <h1 class=" middleTitleText">예시 제목</h1>
-                    <h2 class=" smallTitleText">여기다가 소제목을 적으십시오</h2>
+                    <h1 class=" middleTitleText">오신 것을 환영합니다!</h1>
+                    <h2 class=" smallTitleText mt-5">미래 개발자 김진회의 포트폴리오 사이트!</h2>
                 </div>
                 <div class="button col-9 row">
                     <button type="button" class="btn btn-primary btn-lg col-12 col-lg-3 mb-5 mb-lg-0 fs-4 fs-lg-1" style="height: 90px; background-color: rgba(111, 114, 184, 0.8); border-color: rgba(111, 114, 184, 0.8);" onclick="window.open('https://arist6034.tistory.com/', '_blank');">
@@ -50,9 +50,8 @@
         <div class="License" id="License">   
             <div class="upBlock col-12"></div>
             <div class="license d-flex">
-                <div class="left col-12 col-lg-6">
-                    <img class="col-12 col-lg-4 " src="img/mainLicense.jpg" alt="가장 중요한 자격증 사진"><!--크게 보이는 이미지-->
-                    <h1 class="col-12 col-lg-6">자격증 이름<br>얻은 날짜</h1>
+                <div class="left col-12 col-lg-6 d-flex align-items-center">
+                    <h1 class="col-12 col-lg-6 p-3">자격증 이름<br>얻은 날짜</h1>
                 </div>
                 <div class="right col-12 col-lg-6 mt-lg-5 pt-lg-5">
                     <ul class="license-list">
@@ -70,27 +69,27 @@
                 </div>
                 <div class="lg-none" style="height: 100px;"></div>
                 <div class="nextButton2">
-                    <button type="button" class="btn btn-outline-info col-1" id="prevBtn" style="width: 60px;">&lt;</button>
-                    <button type="button" class="btn btn-outline-info col-1" id="nextBtn" style="width: 60px;">&gt;</button>
+                    <button type="button" class="btn btn-outline-info col-1 mb-2" id="prevBtn" style="width: 60px;">&lt;</button>
+                    <button type="button" class="btn btn-outline-info col-1 mb-2" id="nextBtn" style="width: 60px;">&gt;</button>
                 </div>
             </div>
             <div class="downBlock"></div>
         </div>
         <div class="About" id="About">
-            <div class="History col-8">
+            <div class="History col-8 col-lg-12">
                 <h1 class="hh1" style="color: white;">소개</h1>
                 <div class="HistoryWrap col-12 justify-content-around">
                     <div class="workHistory col-lg-4 col-12" onclick="scrollToWorkHistory()">
-                        <h1>경력</h1>
+                        <h1 class="text-center">경력</h1>
                     </div>
-                    <div class="myHistory col-lg-4 col-12" onclick="scrollToMyHistory()">
+                    <div class="myHistory col-lg-4 col-12 text-center" onclick="scrollToMyHistory()">
                         <h1>나에 대한 이야기</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="workHistoryMain d-block d-sm-flex" id="workHistory">
-            <h1 class="h1">경력</h1>
+        <div class="workHistoryMain d-block d-sm-flex pt-5" id="workHistory">
+            <h1 class="h1 mb-5">경력</h1>
             <div class="workHistoryContent d-none d-sm-flex">
                 <div class="left">
                     <ul id="yearList">
@@ -127,9 +126,9 @@
                 </div>
             </div>
             <!-- 모바일에서만 보여줄 부분에 class 이름을 변경합니다 -->
-            <div class="workHistoryContentMob d- d-sm-none row">
-                <div class="up col">
-                    <ul class="d-flex yearList" style="color: white;">
+            <div class="workHistoryContentMob d- d-sm-none">
+                <div class="up col d-flex justify-content-center">
+                    <ul class="d-flex yearList col" style="color: white;">
                         <li data-year="2024"><h1>2024</h1></li>
                         <li data-year="2025"><h1>2025</h1></li>
                         <li data-year="2026"><h1>2026</h1></li>
@@ -142,7 +141,7 @@
                 <div class="down col">
                     <ul>
                         <li class="year-infos" data-year="2024">
-                            <h1>01</h1>
+                            <h1>01</h1  >
                             <p>경력에 대한 이야기</p>
                         </li>
                         <li class="year-infos" data-year="2024">
@@ -167,7 +166,7 @@
 
         </div>
         <div class="myHistoryMain" id="myHistory">
-            <div class="up">
+            <div class="up mb-5">
                 <img src="img/cloud.png" alt="구름" class="d-none d-md-flex">
                 <div class="text">
                     <h1>여유로운 삶을 추구하며</h1>
@@ -175,7 +174,7 @@
                 </div>
             </div>
             <hr>
-            <div class="down">
+            <div class="down pt-3">
                 <div class="text">
                     <h1>내 삶의 취미</h1>
                     <p>독서하는 것을 즐기며 역사를 탐구하길 좋아합니다. <br> 게임을 자주하며 글을 쓰는 것을 좋아합니다. <br> 머리 속으로 게임을 구상해보고 직접 제작을 시도합니다.</p>
