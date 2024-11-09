@@ -45,9 +45,7 @@ a{
     justify-content: space-between;
     font-size: 25px;
     color: white;
-}
-.menu ul{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .menu li{
     list-style: none;
