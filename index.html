@@ -142,7 +142,7 @@
                 <div class="down col">
                     <ul>
                         <li class="year-infos" data-year="2024">
-                            <h2>01</h2>
+                            <h1>01</h1>
                             <p>경력에 대한 이야기</p>
                         </li>
                         <li class="year-infos" data-year="2024">
@@ -206,76 +206,47 @@
         });
 
 
-        const years = document.querySelectorAll('.left ul li');
-const yearInfos = document.querySelectorAll('.right .year-info');
+// 데스크탑 화면에서 사용하는 년도 리스트와 년도 정보 리스트
+const years = document.querySelectorAll('#yearList li');
+const yearInfos = document.querySelectorAll('.year-info');
 
-years.forEach(year => {
-    year.addEventListener('click', () => {
-        // 모든 년도 정보 숨기기
-        yearInfos.forEach(info => {
-            info.style.display = 'none';
+// 모바일 화면에서 사용하는 년도 리스트와 년도 정보 리스트
+const mobileYears = document.querySelectorAll('.workHistoryContentMob .up .yearList li');
+const mobileYearInfos = document.querySelectorAll('.workHistoryContentMob .down .year-infos');
+
+// 공통으로 사용하는 클릭 이벤트 처리 함수
+function handleYearClick(yearElements, yearInfoElements) {
+    yearElements.forEach(year => {
+        year.addEventListener('click', () => {
+            // 모든 년도 정보 숨기기
+            yearInfoElements.forEach(info => {
+                info.style.display = 'none';
+            });
+
+            // 클릭한 년도에 해당하는 정보만 보여주기
+            const selectedYear = year.getAttribute('data-year');
+            yearInfoElements.forEach(info => {
+                if (info.getAttribute('data-year') === selectedYear) {
+                    info.style.display = 'block';
+                }
+            });
+
+            // 강조 효과 적용
+            yearElements.forEach(y => y.style.textShadow = 'none'); // 초기화
+            year.style.textShadow = '0 0 40px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7)';
         });
-
-        // 클릭한 년도에 해당하는 정보만 보여주기
-        const selectedYear = year.getAttribute('data-year');
-        yearInfos.forEach(info => {
-            if (info.getAttribute('data-year') === selectedYear) {
-                info.style.display = 'block';
-            }
-        });
-
-        // 강조 효과 적용
-        years.forEach(y => y.style.textShadow = 'none'); // 초기화
-        year.style.textShadow = '0 0 40px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7)';
     });
-});
+}
+
+// 데스크탑 화면 이벤트 처리
+handleYearClick(years, yearInfos);
+
+// 모바일 화면 이벤트 처리
+handleYearClick(mobileYears, mobileYearInfos);
+
 
 // 'yearList'는 왼쪽의 년도 리스트를 가리킴
-document.addEventListener('DOMContentLoaded', function () {
-    // 화면 크기 체크 (모바일일 때만 동작하도록 설정)
-    const isMobile = window.innerWidth < 768; // 모바일 화면 (768px 미만을 모바일로 처리)
 
-    // 'yearList'는 왼쪽의 년도 리스트를 가리킴
-    const yearss = document.querySelectorAll('.yearList li');
-
-    // 'year-infos'는 년도에 해당하는 정보들을 가리킴
-    const yearInfoss = document.querySelectorAll('.year-infos');
-
-    // 모바일 화면에서만 클래스 변경
-    if (isMobile) {
-        // 여기에 추가적으로 모바일에서만 사용할 코드가 있으면 넣을 수 있습니다.
-        // 기존 코드처럼 동작하지만 클래스만 변경하는 방식
-
-        yearss.forEach(year => {
-            year.addEventListener('click', () => {
-                // 모든 년도 정보 숨기기
-                yearInfoss.forEach(info => {
-                    info.style.display = 'none';
-                });
-
-                // 클릭한 년도에 해당하는 정보만 보여주기
-                const selectedYear = year.getAttribute('data-year');
-                yearInfoss.forEach(info => {
-                    if (info.getAttribute('data-year') === selectedYear) {
-                        info.style.display = 'block';
-                    }
-                });
-
-                // 강조 효과 적용
-                yearss.forEach(y => y.style.textShadow = 'none'); // 초기화
-                year.style.textShadow = '0 0 40px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7)';
-            });
-        });
-    } else {
-        // PC에서는 기본적으로 모든 내용이 표시되도록 설정
-        yearInfoss.forEach(info => {
-            info.style.display = 'block'; // PC에서는 모든 정보를 항상 표시
-        });
-
-        // PC에서는 클릭에 의한 동적 표시를 하지 않음
-        console.log("PC 모드에서는 클릭 시 동작하지 않습니다.");
-    }
-});
 
 function scrollToWorkHistory() {
     const workHistorySection = document.getElementById('workHistory');
