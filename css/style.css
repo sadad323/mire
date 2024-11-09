@@ -151,9 +151,10 @@ a{
     height: 60px;
     background-color: #7D94E7;
     margin-bottom: 70px;
-    font-size: 40px;
+    font-size: 2rem;
     padding-left: 15px;
     font-weight: bold;
+    line-height: 2;
 }
 .License .left h1{
     color: white;
