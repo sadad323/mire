@@ -191,7 +191,7 @@ a{
 .About .History .workHistory{
     border: 1px solid black;
     height: 400px;
-    background: url(/img/coding.jpg) no-repeat;
+    background: url(img/coding.jpg) no-repeat;
     background-size: cover;
     transition: transform 0.3s ease;
 }
@@ -202,7 +202,7 @@ a{
 .About .History .myHistory{
     border: 1px solid black;
     height: 400px;
-    background: url(/img/sky.jpg) no-repeat;
+    background: url(img/sky.jpg) no-repeat;
     background-size: cover;
     transition: transform 0.3s ease;
 }
@@ -288,7 +288,7 @@ a{
     border: 1px solid black;
     left: 150px;
     top: 130px;
-    background-image: url(/img/coding.jpg);
+    background-image: url(img/coding.jpg);
     background-size: cover;
 }
     .workHistoryMain .left .mainWorkHistory h1{
