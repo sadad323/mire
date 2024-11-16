@@ -198,6 +198,7 @@ a{
 }
 .About .History .workHistory{
     border: 1px solid black;
+    cursor: pointer;
     height: 400px;
     background: url(../img/coding.jpg) no-repeat;
     background-size: cover;
@@ -212,6 +213,7 @@ a{
     height: 400px;
     background: url(../img/sky.jpg) no-repeat;
     background-size: cover;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 .About .History .myHistory:hover{
@@ -239,6 +241,11 @@ a{
     background-color: #23243d;
     flex-direction: column;
 }
+
+.yearList li{
+    cursor: pointer;
+}
+
 .workHistoryContentMob .up ul{
     overflow-x: scroll;
     width: 80%;
@@ -283,6 +290,7 @@ a{
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
+    cursor: pointer;
 }
 .workHistoryContent .left li:hover{
     transform: scale(1.2);
@@ -348,20 +356,22 @@ a{
     padding-top: 60px;
 }
 .myHistoryMain .up img{
-    height: 200px;
-    width: 300px;
+    /* height: 200px; */
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
     margin-right: 2em;
 }
 .myHistoryMain .up .text{
     background-color: #373a63;
     color: white;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: 400px;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding : 40px;
     box-shadow:0 0 55px rgba(102, 103, 171, 0.7), 0 0 50px rgba(102, 103, 171, 0.7),0 0 45px rgba(102, 103, 171, 0.7),0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
 
 }
@@ -375,7 +385,7 @@ a{
 .myHistoryMain .down{
     display: flex;
     position: relative;
-    height: 50%;
+    /* height: 50%; */
     width: 70%;
     margin: 0 auto;
 }
@@ -388,11 +398,12 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
+    padding : 40px;
 }
 .myHistoryMain .down img{
-    width: 350px;
-    height: 350px;
+
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
     margin-left: 2em;
 }
@@ -402,7 +413,6 @@ a{
     background-color: #33335a;
     color: white;
     width: 100%;
-    height: 200px;
 }
 .footer a{
     text-decoration: none;
