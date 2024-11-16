@@ -219,13 +219,13 @@ a{
     box-shadow: 0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
 }
 .About .History .workHistory h1{
-    font-size: 2.8rem;
+    font-size: 2rem;
     border: 1px solid black;
     background-color: blue;
     color: white;
 }
 .About .History .myHistory h1{
-    font-size: 2.8rem;
+    font-size: 2rem;
     border: 1px solid black;
     background-color: blue;
     color: white;
@@ -272,7 +272,7 @@ a{
     box-shadow:0 0 55px rgba(102, 103, 171, 0.7), 0 0 50px rgba(102, 103, 171, 0.7),0 0 45px rgba(102, 103, 171, 0.7),0 0 40px rgba(102, 103, 171, 0.7), 0 0 35px rgba(102, 103, 171, 0.7), 0 0 30px rgba(102, 103, 171, 0.7), 0 0 25px rgba(102, 103, 171, 0.7),0 0 20px rgba(102, 103, 171, 0.7),0 0 15px rgba(102, 103, 171    , 0.7);
 }
 .workHistoryContent .left{
-    width: 17%;
+    width: 25%;
     height: 100%;
     border-right: 1px solid white;
     background-color: #303152;
@@ -328,7 +328,7 @@ a{
     background-color: #303152;
 }
 .workHistoryContent .right ul{
-    width: 70%;
+    width: 95%;
     height: 100%;
 }
 .workHistoryContent .right li{
@@ -366,7 +366,8 @@ a{
 
 }
 .text h1{
-    font-size: 1.7em;
+    font-size: 1.25em;
+    padding-bottom:10px ;
 }
 .text p{
     font-size: 1em;
@@ -438,7 +439,7 @@ a{
         width: 250px;
     }
     .License .license .left{
-        padding: 30px 100px 30px 100px;
+        padding-bottom: 30px 
     }
     .License .license .nextButton2{
         display: flex;
