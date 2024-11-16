@@ -416,7 +416,7 @@ a{
 }
 
 /*미디어 커리*/
-@media (min-width: 576px) and (max-width:741px) {
+@media (max-width:741px) {
     .workHistoryContent .left li{   
         font-size: 20px;
     }
